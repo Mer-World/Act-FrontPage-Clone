@@ -6,65 +6,140 @@
     <title>Act FrontPage Clone</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #FFFFFFCC;
+            color:#7B809A;
+        }
+        img.responsive-img {
+            width: 24%; 
+        }
+        @media screen and (max-width: 1024px) {
+            img.responsive-img {
+                width: 100%; 
+            }
+        }
+
+        .navbar-toggler{
+            background-color: rgb(127, 31, 31);
+            margin-left:150px;
+        }
+        .btn-bg{
+            background-color: white;
+            color: black;
+            box-shadow: 0 3px 3px 0 rgba(255, 255, 255, 0.15), 0 3px 1px -2px rgba(255, 255, 255, 0.2), 0 1px 5px 0 rgba(255, 255, 255, 0.15);
+        }
+        @media screen and (min-width:1060px) {
+            .btn-bg{
+                margin-top:75px;
+                align-items: center;
+
+            }
+            .online{
+                margin-left: 300px;
+            }
+            
+        }
+        .first{
+           
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top:-60px;
+            border-radius: 15px 15px;
+            background-color: #FFFFFFCC;
+            padding-top:150px;
+            margin-bottom:120px;
+
+        }
+    </style>
+    
+    
+
 </head>
 <body>
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
    
-      <div class="py-5 mb-4 bg-light" style="background-image: url(https://www.act.edu.et/assets/img/bg4.png); height: 600px; background-repeat: no-repeat; background-size: cover;">
+      <div class="py-5 mb-6 bg-light" style="background-image: url(https://www.act.edu.et/assets/img/bg4.png); height: 600px; background-repeat: no-repeat; background-size: cover; background-color:rgb(51, 122, 183);opacity: 0.8;">
+        <div class="nav-container" style="border: 3px solid #FFFFFFCC; margin-left: 120px; margin-right: 120px;margin-bottom: 20px; margin-top: 0px;border-radius: 15px 15px;  background-color: #FFFFFFCC;">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid" >
+                <img src="https://www.act.edu.et/assets/img/act1.png" alt="" class="responsive-img">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Academic <br>Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">ACT Undergraduate Program</a></li>
+                          <li><a class="dropdown-item" href="#">ACT Masters Program</a></li>
+                          <li><a class="dropdown-item" href="#">MIU Masters Program</a></li>
+                        </ul>
+                      </li>
+                
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Online <br>Programs
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Business Administration</a></li>
+                      <li><a class="dropdown-item" href="#">Leadership</a></li>
+                      <li><a class="dropdown-item" href="#">Project Management</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                     News<br> &<br> Events
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">News</a></li>
+                      <li><a class="dropdown-item" href="#">Events</a></li>
+                      <li><a class="dropdown-item" href="#">MIU Programming Exam</a></li>
+                      <li><a class="dropdown-item" href="#">MIU Publications</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="https://class.act.edu.et/">MYACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.act.edu.et/trainings">Training and <br>Consultancy</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                      <button type="button" class="btn btn-outline-primary" style="margin-right: 8px;  background-color: #337AB7; color:white">APPLY NOW</button>
+                    <button type="button" class="btn btn-outline-secondary" style="background-color: #337AB7; color:white">PAY USING TELEBIRR</button>
+                    <style>
+                                    .btn-outline-primary,.btn-outline-secondary:hover {
+                background-color: #337AB7;
+                border-color: #337AB7;
+                box-shadow: 0 14px 26px -12px rgba(26, 115, 232, 0.4), 0 4px 23px 0 rgba(26, 115, 232, 0.15), 0 8px 10px -5px rgba(26, 115, 232, 0.2);
+            }
+                    </style>
+              
               </div>
             </div>
           </nav>
+        </div>
         <div class="container">
             <h1 style="color: white; text-align: center;">American College of Technology affiliated <br>with Maharishi International University.<br>
-                Place for Dreamers, Thinkers and Doers.</h1>
+            </h1>
+                <h4 style="color: white; text-align: center;">Place for Dreamers, Thinkers and Doers.</h4>
 
             <p class="lead" style="color:white; text-align: center;">A Unique Program for Students Worldwide<br>
                 Proven Personal and Professional Development.
                 
                 </p>
                 <div style="display: flex;">
-                    <div style="padding-left: 150px; padding-right: 30px;">
-                        <p><a href="https://www.tutorialrepublic.com" target="_blank" class="btn btn-primary btn-lg">APPLY FOR ONLINE PROGRAM</a></p>
+                    <div style="margin-right: 20px;">
+                        <p><a href="https://www.tutorialrepublic.com" target="_blank" class="btn btn-primary btn-bg online" style="width:250px;">APPLY FOR ONLINE PROGRAM</a></p>
                     </div>
-                    <div style="
-                    padding-left: 30px;
-                    padding-right: 150px;" >
-                             <p><a href="https://www.tutorialrepublic.com" target="_blank" class="btn btn-primary btn-lg">APPLY FOR REGULAR PROGRAM</a></p>
+                    <div style="margin-left:0;">
+                             <p><a href="https://www.tutorialrepublic.com" target="_blank" class="btn btn-primary btn-bg regular" style="width:270px ; align-items: center;">APPLY FOR REGULAR PROGRAM</a></p>
                     </div>
                      
        
@@ -72,30 +147,39 @@
            
         </div>
     </div>
-    <div class="container">
-        <!--Row with two equal columns-->
+    <div class="card">
+        <div class="card-body first">
+          <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <h1> AN EXCITING OPPORTUNITY FOR MSC IN COMPUTER SCIENCE AND MBA PROGRAM APPLICANTS<br></h1>
+                <h1 style="color:#3b4161;font-weight:900; letter-spacing: -0.05rem; font-family: 'Courier New', Courier, monospace;">AN EXCITING OPPORTUNITY FOR MSC<br> IN COMPUTER SCIENCE AND MBA PROGRAM APPLICANTS<br></h1>
                
                 <p>
                     American College of Technology (ACT) is a higher learning institution established with a mission of producing internationally competent professionals in the field of Management, Business Administration and Computer Science programs at graduate level. ACT is fully accredited by the Ethiopian Higher Education Agency. The College aspires to be one of the leading higher learning institutions in the region. ACT engages highly qualified and experienced academic staff members from the US and local to make you highly competent in the industry. ACT has already started registration for 2020/21 during normal working hours. Our programs are unique, flexible and affordable. Don't miss it!!! If you are interested to get registered, please call or email or visit us.
                 </p>
                 
             </div>
+           
+
             <div class="col-lg-4">
-                <div class="card" style="width: 300px;">
-                    <img src="https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Develop your Inner Genius</h5>
-                        <p class="card-text">Accredited, Respected and Recognized
-                        American College of Technology is Accredited by Education and Training Authority (ETA)</p>
-                        <a href="#" class="btn btn-primary">View Profile</a>
+                <div class="card text-white position-relative" style="width: 300px; height: 400px; border: none; overflow: hidden;">
+                    <!-- Background Image -->
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center" 
+                         style="background: linear-gradient(rgba(211, 7, 7, 0.5), rgba(206, 11, 118, 0.5)), 
+                                url('https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80');
+                                background-size: cover; background-position: center; height: 100%;">
+                        <!-- Text Overlay -->
+                        <h5 class="card-title text-center" style="font-weight:900; font-size:xx-large; font-family:'Times New Roman', Times, serif;">Develop your Inner Genius</h5>
+                        <p class="card-text text-center px-3">Accredited, Respected, and Recognized. 
+                            American College of Technology is Accredited by the Education and Training Authority (ETA).
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         </div>
+      
+    
 <br><br>
 <h1>
     Recent News
@@ -279,6 +363,8 @@
                                 </div>
                                 </div>
 <br><br><br>
+</div>
+</div>
                                 
 <footer>
     <div class="container">
