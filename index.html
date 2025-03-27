@@ -105,6 +105,18 @@
         .flip-card {
   perspective: 1000px;
 }
+@media (max-width: 580px) {
+  .btn-outline-primary, .btn-outline-secondary {
+    display: block; /* Stacks the buttons vertically */
+    width: 100%; /* Makes the buttons take full width of the container */
+    margin: 5px 0; /* Adds spacing between the buttons */
+    box-shadow: none; /* Optional: Simplifies shadows for smaller screens */
+  }
+
+  .navbar-collapse {
+    text-align: center; /* Centers menu items and buttons */
+  }
+}
 
 .flip-card-inner {
   position: relative;
