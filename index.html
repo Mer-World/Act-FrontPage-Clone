@@ -87,7 +87,7 @@
             }
         }
        
-    .btn-outline-primary,.btn-outline-secondary:hover {
+    .btn-outline-primary:hover,.btn-outline-secondary:hover {
                 background-color: #337AB7;
                 border-color: #337AB7;
                 box-shadow: 0 14px 26px -12px rgba(26, 115, 232, 0.4), 0 4px 23px 0 rgba(26, 115, 232, 0.15), 0 8px 10px -5px rgba(26, 115, 232, 0.2);
@@ -117,7 +117,43 @@
     text-align: center; /* Centers menu items and buttons */
   }
 }
+/* Base Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Space between brand/logo and menu toggle */
+  padding: 0 15px; /* Add horizontal padding */
+}
 
+/* Ensure Navbar Toggler Stays Inside */
+.navbar-toggler {
+  background-color: rgb(127, 31, 31);
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-left: 0 !important; /* Reset extra margin */
+  padding: 5px 10px; /* Adjust padding for better fit */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 10px 15px !important; /* Ensure no overflow */
+  }
+
+  .navbar-collapse {
+    background-color: white !important;
+    padding: 15px !important;
+    border-radius: 10px !important;
+    margin-top: 10px !important;
+  }
+
+  .navbar-toggler {
+    margin-left: auto !important; /* Push toggler to the far right */
+  }
+}
 .flip-card-inner {
   position: relative;
   width: 300px;
@@ -522,7 +558,7 @@ Posted 2024-09-06 11:05:21</p>
 
                                 
 <footer>
-    <div class="container">
+    <div class="container px-3" style="background-color: rgb(220, 236, 241); border-radius: 15px 15px;">
         <!--Row with two equal columns-->
         <div class="row">
             <div class="col-md-4">American College of Technology<br>
